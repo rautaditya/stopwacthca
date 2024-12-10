@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Stopwatch</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="stopwatch-container">
+    <h1>CA Study Stopwatch</h1>
+    <div class="time-display">
+      <span id="minutes">00</span>:<span id="seconds">00</span>:<span id="milliseconds">00</span>
+    </div>
+    <div class="buttons">
+      <button id="startStop" onclick="startStop()">Start</button>
+      <button id="reset" onclick="reset()">Reset</button>
+    </div>
+    
+    <!-- Notes Section -->
+    <div class="notes-section">
+      <h2>Notes</h2>
+      <textarea id="notes" placeholder="Write your study notes here..." rows="6" cols="40"></textarea>
+    </div>
+
+    <!-- Time Data Section -->
+    <div class="data-section">
+      <h3>Study Session Summary</h3>
+      <p id="summary"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
